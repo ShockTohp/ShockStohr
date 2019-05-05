@@ -1,3 +1,5 @@
+#ifndef ENCRYPT_H
+#define ENCRYPT_H
 #include <vector> 
 #include <iostream>
 #include <fstream>
@@ -8,3 +10,4 @@ using namespace std;
 void xor_encrypt(const string &key, vector<char> &data);
 vector<char> importData(string filename, string key);
 vector<char> exportData(string filename, string key, vector<char> data);
+#endif
